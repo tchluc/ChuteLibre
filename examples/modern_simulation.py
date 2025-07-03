@@ -307,12 +307,12 @@ class SingleBallSimulationApp:
                          (plot_x, plot_y + plot_height), (plot_x + plot_width, plot_y + plot_height), 2)
 
         # Labels des axes
-        energy_label = pygame.font.SysFont("Arial", 12, bold=True).render("Énergie (J)", True, ModernColors.TEXT)
+        energy_label = pygame.font.SysFont("Arial", 10, bold=True).render("Énergie (J)", True, ModernColors.TEXT)
         # Rotation du texte pour l'axe Y
         energy_label_rotated = pygame.transform.rotate(energy_label, 90)
         self.screen.blit(energy_label_rotated, (x + 5, plot_y + plot_height // 2 - 30))
 
-        time_label = pygame.font.SysFont("Arial", 12, bold=True).render("Temps (s)", True, ModernColors.TEXT)
+        time_label = pygame.font.SysFont("Arial", 10, bold=True).render("Temps (s)", True, ModernColors.TEXT)
         self.screen.blit(time_label, (plot_x + plot_width // 2 - 30, plot_y + plot_height + 25))
 
         # Légende
